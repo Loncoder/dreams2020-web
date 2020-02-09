@@ -2,7 +2,7 @@
   <div class="detail">
     <!-- 头部 -->
     <imooc-header title="实战详情"></imooc-header>
-     
+
     <!-- 主要内容 -->
     <div class="content" v-if="classData">
       <!-- 上部分信息 -->
@@ -56,7 +56,17 @@
           <li class="chapter-item" v-for="chapter in classData.chapterlist" :key="chapter.id">
             <div class="title bold">{{ chapter.title }}</div>
             <ul class="class-list cr-basic">
-              <li class="class-item" v-for="clas in chapter.classlist" :key="clas.id">{{ clas }}</li>
+              <li class="class-item" v-for="clas in chapter.classlist" :key="clas.id">
+                <div class="imooc-flex imooc-flex-start">
+                  <div class="btn play-btn bold" @click="showVideo">
+                  <span class="icon-play">
+                    <span class="path1"></span><span class="path2"></span><span class="path3"> </span>
+                </span>
+                </div>
+                <div>  <span >{{ clas }}</span></div>
+                </div>
+
+              </li>
             </ul>
           </li>
           <!-- 透明遮罩 -->
@@ -121,7 +131,7 @@
         <div class="btn buy-btn" @click="toPayPage">立即购买</div>
       </div>
     </div>
-    
+
   </div>
 </template>
 

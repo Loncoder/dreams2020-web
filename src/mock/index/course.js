@@ -1,6 +1,6 @@
 /*
- * @Author: likang xie 
- * @Date: 2018-08-15 14:33:53 
+ * @Author: likang xie
+ * @Date: 2018-08-15 14:33:53
  * @Purpose: 主页->课程模块数据
  */
 
@@ -23,7 +23,7 @@ const courseData = req => {
       }
     }
     // 生成类型
-    let tlen = Random.natural(0, 10);
+    let tlen = Random.natural(1, 3);
     for (let i = 0; i < tlen; i++) {
       let type = {
         icon: Random.dataImage('40x40', ''),

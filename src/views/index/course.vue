@@ -108,7 +108,7 @@ export default {
       this.cscroll.scrollToElement(el, 300);
     },
     toDetail(id) {
-      this.$router.push({ name: "csdetail", params: { id: id } });
+      this.$router.push({name: "cdetail", params: {id}});
     }
   },
   computed: {

@@ -17,13 +17,13 @@
         <li class="menu-item cart-item" v-if="!isIndex" @click="toCart">
           <span class="icon-cart">
             <span class="path1"></span><span class="path2"></span>
-          </span> 
+          </span>
         </li>
         <!-- 主页 -->
         <li class="menu-item" v-if="isIndex" @click="toSearch">
           <span class="icon-search">
             <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-          </span> 
+          </span>
         </li>
         <li class="menu-item">
           <!-- 未登录 -->
@@ -53,10 +53,6 @@ export default {
         {
           content: "课程",
           url: "/index/course"
-        },
-        {
-          content: "路径",
-          url: "/index/path"
         },
         {
           content: "实战",

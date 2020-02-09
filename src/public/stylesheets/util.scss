@@ -1,6 +1,6 @@
 /*
- * @Author: likang xie 
- * @Date: 2018-08-14 19:29:17 
+ * @Author: likang xie
+ * @Date: 2018-08-14 19:29:17
  * @Purpose: 工具类
  */
 
@@ -10,6 +10,10 @@
 
 .imooc-flex-between {
   justify-content: space-between;
+}
+
+.imooc-flex-start {
+  justify-content: flex-start;
 }
 
 .imooc-flex-around {
